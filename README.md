@@ -13,7 +13,7 @@ El código se escribe en un lenguaje basado en C/C++ desarrollado por la propia 
 ![arduino drawio](https://github.com/user-attachments/assets/714955eb-b39b-4059-8e13-50c68bbe0059)
 
 
-Se utilizan las entradas analogícas del microcontrolador para tomar un muestreo simil contiúo de la señal a medir y se utiliza el IDE (integrated development environment) del Arduino para visualizarlo, ya que cuenta con un trazador en pantalla de señales seriales (Serial Plotter).
+Se utilizan las entradas analogícas del microcontrolador para tomar un muestreo simil continuo de la señal a medir y se utiliza el IDE (integrated development environment) del Arduino para visualizarlo, ya que cuenta con un trazador en pantalla de señales seriales (Serial Plotter).
 
 
 Funcionamiento:
@@ -28,6 +28,47 @@ Rango de Medición: El rango típico de entrada analógica es de 0 a 5V. Sin emb
 Resolución: La resolución es de 10 bits, lo que da 1024 niveles posibles. Por ejemplo, si estás midiendo un voltaje de 5V, cada nivel representa aproximadamente 4.9 mV.
 
 Muestreo/Velocidad de Baudios: La comunicación serial se realiza a una velocidad determinada en baudios, que indica la cantidad de bits transmitidos por segundo. En el código de Arduino, se especifica con la función Serial.begin(baudRate). Las velocidades comunes son 9600, 115200, etc.
+
+
+o 
+
+```markdown
+```c++
+#Constantes para trabajar con los pines de la placa
+const float pinSignal1 = A0; // Primer señal en el pin A0
+const float pinSignal2 = A1; // Segunda señal en el pin A1
+
+# Funcion de configuración
+void setup() 
+{
+  // Iniciar la comunicación serial
+  Serial.begin(115200);
+  pinMode(pinSignal1,INPUT),
+  pinMode(pinSignal2,INPUT);
+}
+
+#Funcion de proceso
+
+void loop()
+{
+  // Leer las señales de los pines analógicos
+  float valorSignal1 = analogRead(pinSignal1);
+  float valorSignal2 = analogRead(pinSignal2);
+  
+  // Enviar los valores leídos al monitor serial
+  Serial.print("Signal_A:");
+  Serial.println(valorSignal1);
+  
+  Serial.print("Signal_B:");
+  Serial.println(valorSignal2);
+ 
+  #Muestreo en Trazador
+  delay(500); // 500 milisegundos (0.5 segundos)
+}
+}
+
+```
+
 
 ![Captura desde 2024-08-18 09-50-44](https://github.com/user-attachments/assets/b33a1ae5-9481-49b8-a3e7-057d2858a73c)
 
