@@ -1,5 +1,4 @@
 // Definir los pines analógicos a los que están conectadas las señales
-
 const float pinSignal1 = A0; // Primer señal en el pin A0
 const float pinSignal2 = A1; // Segunda señal en el pin A1
 
