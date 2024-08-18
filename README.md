@@ -5,3 +5,10 @@ Pequeño codigo para placa de desarrollo Arduino, para visualizar dos señales p
 
 
 [Grabación de pantalla desde 2024-08-18 09-54-15.webm](https://github.com/user-attachments/assets/6474c47a-35ad-42cb-a3f6-cca87a97e43c)
+
+
+
+Utilizado en proyecto real (Contador digital)
+
+[![Nombre del video](https://img.youtube.com/vi/soxA6iLSIic?si=A4vQgxyXnyEfhXhk/maxresdefault.jpg)](https://www.youtube.com/watch?v=soxA6iLSIic?si=A4vQgxyXnyEfhXhk)
+
