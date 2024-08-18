@@ -1,5 +1,7 @@
-# Arduino_Osciloscopio
-Pequeño codigo para placa de desarrollo Arduino UNO, para visualizar dos señales pequeñas para proyectos pequeños.
+<h1> <img src="https://github.com/user-attachments/assets/5c7d3eb9-ce96-4413-abdf-e61be526ec29" alt="imagen" width="60"/>  Arduino_Osciloscopio</h1>
+
+Pequeño código para placa de desarrollo Arduino UNO, para visualizar dos señales pequeñas para proyectos pequeños.
+
 
 Contexto:
 Arduino Uno es una placa de desarrollo de código abierto que cuenta con un microcontrolador microchip ATmega328P (circuito integrado en el que se puede grabar instrucciones)  (https://www.microchip.com/en-us/product/atmega328p) y desarrollado por Arduino.cc una compañía de desarrollo de software ( https://www.arduino.cc ).
@@ -23,7 +25,8 @@ Estos datos deben ser enviados en un formato que el Serial Plotter pueda interpr
 
 El Arduino UNO tiene un conversor analógico-digital (ADC) de 10 bits, lo que significa que puede medir valores en un rango de 0 a 1023. Esto se traduce en una resolución de aproximadamente 4.9 mV por paso (si la referencia de voltaje es 5V).
 
-Rango de Medición: El rango típico de entrada analógica es de 0 a 5V. Sin embargo, puedes cambiar la referencia de voltaje interna a 1.1V usando la función analogReference() para medir un rango más pequeño con mayor precisión.
+<h1>  <img src="https://github.com/user-attachments/assets/94877b40-f435-4d96-a9d3-cc7039e3b327" alt="imagen" width="60"/> Rango de Medición </h1>
+El rango típico de entrada analógica es de 0 a 5V. Sin embargo, puedes cambiar la referencia de voltaje interna a 1.1V usando la función analogReference() para medir un rango más pequeño con mayor precisión.
 
 Resolución: La resolución es de 10 bits, lo que da 1024 niveles posibles. Por ejemplo, si estás midiendo un voltaje de 5V, cada nivel representa aproximadamente 4.9 mV.
 
